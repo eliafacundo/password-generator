@@ -27,16 +27,7 @@ generatePassword.addEventListener("click", function(generate) {
         
     }
     
-    document.getElementById("slider").oninput = function() {
-        if(document.getElementById("slider").value > 8) {
-            document.getElementById("length").innerHTML = "length: " + document.getElementById("slider").value;
-        }
-        else{
-            document.getElementById("length").innerHTML = "Length: 9";
-        }
-    }
-    
-    fucntion copy() {
+    fucntion copyPassword () {
         document.getElementById("display").querySelector();
         document.execCommand("copy");
         alert("password copied to clipboard")
