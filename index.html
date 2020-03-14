@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Password generator</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/password.css">
+        
+    </head>
+    <body>
+        <section  id="backgroundDiv">
+            <div class="container" id="theContainer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Password Generator!</h1>
+                    </div>
+                </div>
+                <div class="row" id="contents">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12" id="subtitle">
+                                <h2>Generate a password</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <textarea
+                            readonly
+                            id="password"
+                            placeholder="Your Secure Password"
+                            aria-label="Generated Password"
+                          ></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" id="btnArea">
+                                <button class="btn btn-outline-success" id="generate" onclick = "run()"">Generate Password</button>
+                                <button class="btn btn-outline-warning" id="copy" onclick=" copyPassword()">Copy to Clipboard</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <script src="assets/java/password.js"></script>
+    </body>
+
+
+
+
+</html>
